@@ -1,6 +1,6 @@
 <script lang="ts">
     import { NormalCounter } from "./normal-counter.svelte";
-    let counter = $state(new NormalCounter());
+    let counter = new NormalCounter();
 
     // This works when I do it inside of the component:
     // let count = $state(0);
