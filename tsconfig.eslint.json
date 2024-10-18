@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["@types/node"],
+    "allowJs": true,
+    "strict": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["eslint.config.mjs", "svelte.config.js"]
+}
