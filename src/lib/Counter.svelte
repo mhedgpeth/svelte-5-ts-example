@@ -14,8 +14,8 @@
 
 <!-- When using a class it doesn't work despite the docs saying so:  -->
 <!-- see https://svelte-5-preview.vercel.app/docs/runes#$state -->
-<button onclick={counter.increment}> + Add </button>
-<button onclick={counter.decrement}> - Subtract </button>
+<button onclick={() => counter.increment()}> + Add </button>
+<button onclick={() => counter.decrement()}> - Subtract </button>
 <p>count is {counter.count}</p>
 
 <!-- When inside of component it works: -->
