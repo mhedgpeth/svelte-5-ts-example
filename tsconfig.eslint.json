@@ -8,5 +8,10 @@
     "strict": true,
     "emitDeclarationOnly": true
   },
-  "include": ["eslint.config.mjs", "svelte.config.js"]
+  "include": [
+    "eslint.config.mjs",
+    "svelte.config.js",
+    "tailwind.config.ts",
+    "postcss.config.js"
+  ]
 }

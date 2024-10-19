@@ -1,22 +1,27 @@
 <script lang="ts">
-    import { NormalCounter } from "./normal-counter.svelte";
-    let counter = new NormalCounter();
+  import Button from "./Button.svelte";
+  import { NormalCounter } from "./normal-counter.svelte";
+  let counter = new NormalCounter();
 </script>
 
-<button
-    data-testid='increment-button'
-    onclick={() => {
+<div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 md:flex-row">
+    <Button
+      dataTestId="increment-button"
+      onclick={() => {
         counter.increment();
-    }}
->
-    + Add
-</button>
-<button
-    data-testid='decrement-button'
-    onclick={() => {
+      }}
+    >
+      + Add
+    </Button>
+    <Button
+      dataTestId="decrement-button"
+      onclick={() => {
         counter.decrement();
-    }}
->
-    - Subtract
-</button>
-<p data-testid='output'>count is {counter.count}</p>
+      }}
+    >
+      - Subtract
+    </Button>
+  </div>
+  <p data-testid="output">count is {counter.count}</p>
+</div>
